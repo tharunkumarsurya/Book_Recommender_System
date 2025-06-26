@@ -1,0 +1,6 @@
+[2025-06-23 23:36:03,801] git.cmd - DEBUG - Popen(['git', 'version'], cwd=C:\Users\tharu\github prog\End-to-End-Book-Recommender-System, stdin=None, shell=False, universal_newlines=False)
+[2025-06-23 23:36:03,863] git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\tharu\github prog\End-to-End-Book-Recommender-System, stdin=None, shell=False, universal_newlines=False)
+[2025-06-23 23:36:03,918] git.cmd - DEBUG - Popen(['git', 'remote', 'get-url', '--all', 'origin'], cwd=C:\Users\tharu\github prog\End-to-End-Book-Recommender-System, stdin=None, shell=False, universal_newlines=False)
+[2025-06-23 23:36:03,982] git.cmd - DEBUG - Popen(['git', 'status', '--porcelain', '--untracked-files'], cwd=C:\Users\tharu\github prog\End-to-End-Book-Recommender-System, stdin=None, shell=False, universal_newlines=False)
+[2025-06-23 23:36:04,693] git.cmd - DEBUG - Popen(['git', 'diff', '--abbrev=40', '--full-index', '-M', '--raw', '-z', '--no-color'], cwd=C:\Users\tharu\github prog\End-to-End-Book-Recommender-System, stdin=None, shell=False, universal_newlines=False)
+[2025-06-23 23:36:04,764] git.cmd - DEBUG - Popen(['git', 'rev-list', 'origin/main..main', '--'], cwd=C:\Users\tharu\github prog\End-to-End-Book-Recommender-System, stdin=None, shell=False, universal_newlines=False)

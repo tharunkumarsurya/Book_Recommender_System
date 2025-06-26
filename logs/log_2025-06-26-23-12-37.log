@@ -1,0 +1,60 @@
+[2025-06-26 23:12:40,848] root - INFO - Model Recommendation Config: ModelRecommendationConfig(book_name_serialized_objects='artifacts\\serialized_objects\\book_names.pkl', book_pivot_serialized_objects='artifacts\\serialized_objects\\book_pivot.pkl', final_rating_serialized_objects='artifacts\\serialized_objects\\final_rating.pkl', trained_model_path='artifacts\\trained_model\\model.pkl')
+[2025-06-26 23:12:44,469] root - INFO - Model Recommendation Config: ModelRecommendationConfig(book_name_serialized_objects='artifacts\\serialized_objects\\book_names.pkl', book_pivot_serialized_objects='artifacts\\serialized_objects\\book_pivot.pkl', final_rating_serialized_objects='artifacts\\serialized_objects\\final_rating.pkl', trained_model_path='artifacts\\trained_model\\model.pkl')
+[2025-06-26 23:12:44,474] root - INFO - ====================Data Ingestion log started.==================== 
+[2025-06-26 23:12:44,474] root - INFO - Data Ingestion Config: DatasetConfig(dataset_download_url='https://github.com/entbappy/Branching-tutorial/raw/master/books_data.zip', raw_data_dir='artifacts\\dataset\\raw_data', ingested_dir='artifacts\\dataset\\ingested_data')
+[2025-06-26 23:12:44,474] root - INFO - Data Validation Config: DataValidationConfig(clean_data_dir='artifacts\\dataset\\clean_data', books_csv_file='artifacts\\dataset\\ingested_data\\BX-Books.csv', ratings_csv_file='artifacts\\dataset\\ingested_data\\BX-Book-Ratings.csv', serialized_objects_dir='artifacts\\serialized_objects')
+[2025-06-26 23:12:44,474] root - INFO - Data Transformation Config: DataTransformationConfig(clean_data_file_path='artifacts\\dataset\\clean_data\\clean_data.csv', transformed_data_dir='artifacts\\dataset\\transformed_data')
+[2025-06-26 23:12:44,474] root - INFO - Data Validation Config: DataValidationConfig(clean_data_dir='artifacts\\dataset\\clean_data', books_csv_file='artifacts\\dataset\\ingested_data\\BX-Books.csv', ratings_csv_file='artifacts\\dataset\\ingested_data\\BX-Book-Ratings.csv', serialized_objects_dir='artifacts\\serialized_objects')
+[2025-06-26 23:12:44,474] root - INFO - Model Trainer Config: ModelTrainerConfig(transformed_data_file_dir='artifacts\\dataset\\transformed_data\\transformed_data.pkl', trained_model_dir='artifacts\\trained_model', trained_model_name='model.pkl')
+[2025-06-26 23:12:44,486] root - INFO - Downloading data from https://github.com/entbappy/Branching-tutorial/raw/master/books_data.zip into file artifacts\dataset\raw_data\books_data.zip
+[2025-06-26 23:12:54,212] root - INFO - Downloaded data from https://github.com/entbappy/Branching-tutorial/raw/master/books_data.zip into file artifacts\dataset\raw_data\books_data.zip
+[2025-06-26 23:12:56,375] root - INFO - Extracting zip file: artifacts\dataset\raw_data\books_data.zip into dir: artifacts\dataset\ingested_data
+[2025-06-26 23:12:56,375] root - INFO - ====================Data Ingestion log completed.==================== 
+
+
+[2025-06-26 23:12:56,375] root - INFO - ====================Data Validation log started.==================== 
+[2025-06-26 23:13:01,909] root - INFO -  Shape of ratings data file: (1149780, 3)
+[2025-06-26 23:13:01,909] root - INFO -  Shape of books data file: (271360, 8)
+[2025-06-26 23:13:05,421] root - INFO -  Shape of the final clean dataset: (59850, 9)
+[2025-06-26 23:13:06,447] root - INFO - Saved cleaned data to artifacts\dataset\clean_data
+[2025-06-26 23:13:06,518] root - INFO - Saved final_rating serialization object to artifacts\serialized_objects
+[2025-06-26 23:13:06,726] root - INFO - ====================Data Validation log completed.==================== 
+
+
+[2025-06-26 23:13:06,726] root - INFO - ====================Data Transformation log started.==================== 
+[2025-06-26 23:13:07,236] root - INFO -  Shape of book pivot table: (742, 888)
+[2025-06-26 23:13:07,263] root - INFO - Saved pivot table data to artifacts\dataset\transformed_data
+[2025-06-26 23:13:07,267] root - INFO - Saved book_names serialization object to artifacts\serialized_objects
+[2025-06-26 23:13:07,281] root - INFO - Saved book_pivot serialization object to artifacts\serialized_objects
+[2025-06-26 23:13:07,285] root - INFO - ====================Data Transformation log completed.==================== 
+
+
+[2025-06-26 23:13:07,285] root - INFO - ====================Model Trainer log started.==================== 
+[2025-06-26 23:13:07,339] root - INFO - Saving final model to artifacts\trained_model\model.pkl
+[2025-06-26 23:13:07,341] root - INFO - ====================Model Trainer log completed.==================== 
+
+
+[2025-06-26 23:13:07,343] root - INFO - Recommended successfully!
+[2025-06-26 23:13:20,632] root - INFO - Model Recommendation Config: ModelRecommendationConfig(book_name_serialized_objects='artifacts\\serialized_objects\\book_names.pkl', book_pivot_serialized_objects='artifacts\\serialized_objects\\book_pivot.pkl', final_rating_serialized_objects='artifacts\\serialized_objects\\final_rating.pkl', trained_model_path='artifacts\\trained_model\\model.pkl')
+[2025-06-26 23:13:23,909] root - INFO - Model Recommendation Config: ModelRecommendationConfig(book_name_serialized_objects='artifacts\\serialized_objects\\book_names.pkl', book_pivot_serialized_objects='artifacts\\serialized_objects\\book_pivot.pkl', final_rating_serialized_objects='artifacts\\serialized_objects\\final_rating.pkl', trained_model_path='artifacts\\trained_model\\model.pkl')
+[2025-06-26 23:13:54,496] root - INFO - Model Recommendation Config: ModelRecommendationConfig(book_name_serialized_objects='artifacts\\serialized_objects\\book_names.pkl', book_pivot_serialized_objects='artifacts\\serialized_objects\\book_pivot.pkl', final_rating_serialized_objects='artifacts\\serialized_objects\\final_rating.pkl', trained_model_path='artifacts\\trained_model\\model.pkl')
+[2025-06-26 23:13:56,412] root - INFO - Model Recommendation Config: ModelRecommendationConfig(book_name_serialized_objects='artifacts\\serialized_objects\\book_names.pkl', book_pivot_serialized_objects='artifacts\\serialized_objects\\book_pivot.pkl', final_rating_serialized_objects='artifacts\\serialized_objects\\final_rating.pkl', trained_model_path='artifacts\\trained_model\\model.pkl')
+[2025-06-26 23:14:09,545] git.cmd - DEBUG - Popen(['git', 'version'], cwd=C:\Users\tharu\github prog\End-to-End-Book-Recommender-System, stdin=None, shell=False, universal_newlines=False)
+[2025-06-26 23:14:09,728] git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\tharu\github prog\End-to-End-Book-Recommender-System, stdin=None, shell=False, universal_newlines=False)
+[2025-06-26 23:14:09,886] git.cmd - DEBUG - Popen(['git', 'remote', 'get-url', '--all', 'origin'], cwd=C:\Users\tharu\github prog\End-to-End-Book-Recommender-System, stdin=None, shell=False, universal_newlines=False)
+[2025-06-26 23:14:10,026] git.cmd - DEBUG - Popen(['git', 'status', '--porcelain', '--untracked-files'], cwd=C:\Users\tharu\github prog\End-to-End-Book-Recommender-System, stdin=None, shell=False, universal_newlines=False)
+[2025-06-26 23:14:10,589] git.cmd - DEBUG - Popen(['git', 'diff', '--abbrev=40', '--full-index', '-M', '--raw', '-z', '--no-color'], cwd=C:\Users\tharu\github prog\End-to-End-Book-Recommender-System, stdin=None, shell=False, universal_newlines=False)
+[2025-06-26 23:14:12,143] git.cmd - DEBUG - Popen(['git', 'rev-list', 'origin/main..main', '--'], cwd=C:\Users\tharu\github prog\End-to-End-Book-Recommender-System, stdin=None, shell=False, universal_newlines=False)
+[2025-06-26 23:14:18,040] git.cmd - DEBUG - Popen(['git', 'version'], cwd=C:\Users\tharu\github prog\End-to-End-Book-Recommender-System, stdin=None, shell=False, universal_newlines=False)
+[2025-06-26 23:14:18,153] git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\tharu\github prog\End-to-End-Book-Recommender-System, stdin=None, shell=False, universal_newlines=False)
+[2025-06-26 23:14:18,256] git.cmd - DEBUG - Popen(['git', 'remote', 'get-url', '--all', 'origin'], cwd=C:\Users\tharu\github prog\End-to-End-Book-Recommender-System, stdin=None, shell=False, universal_newlines=False)
+[2025-06-26 23:14:18,356] git.cmd - DEBUG - Popen(['git', 'status', '--porcelain', '--untracked-files'], cwd=C:\Users\tharu\github prog\End-to-End-Book-Recommender-System, stdin=None, shell=False, universal_newlines=False)
+[2025-06-26 23:14:18,457] git.cmd - DEBUG - Popen(['git', 'diff', '--abbrev=40', '--full-index', '-M', '--raw', '-z', '--no-color'], cwd=C:\Users\tharu\github prog\End-to-End-Book-Recommender-System, stdin=None, shell=False, universal_newlines=False)
+[2025-06-26 23:14:20,130] git.cmd - DEBUG - Popen(['git', 'rev-list', 'origin/main..main', '--'], cwd=C:\Users\tharu\github prog\End-to-End-Book-Recommender-System, stdin=None, shell=False, universal_newlines=False)
+[2025-06-26 23:14:20,360] root - INFO - Model Recommendation Config: ModelRecommendationConfig(book_name_serialized_objects='artifacts\\serialized_objects\\book_names.pkl', book_pivot_serialized_objects='artifacts\\serialized_objects\\book_pivot.pkl', final_rating_serialized_objects='artifacts\\serialized_objects\\final_rating.pkl', trained_model_path='artifacts\\trained_model\\model.pkl')
+[2025-06-26 23:14:22,231] git.cmd - DEBUG - Popen(['git', 'version'], cwd=C:\Users\tharu\github prog\End-to-End-Book-Recommender-System, stdin=None, shell=False, universal_newlines=False)
+[2025-06-26 23:14:22,422] git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\tharu\github prog\End-to-End-Book-Recommender-System, stdin=None, shell=False, universal_newlines=False)
+[2025-06-26 23:14:22,618] git.cmd - DEBUG - Popen(['git', 'remote', 'get-url', '--all', 'origin'], cwd=C:\Users\tharu\github prog\End-to-End-Book-Recommender-System, stdin=None, shell=False, universal_newlines=False)
+[2025-06-26 23:14:22,797] git.cmd - DEBUG - Popen(['git', 'status', '--porcelain', '--untracked-files'], cwd=C:\Users\tharu\github prog\End-to-End-Book-Recommender-System, stdin=None, shell=False, universal_newlines=False)
+[2025-06-26 23:14:23,009] git.cmd - DEBUG - Popen(['git', 'diff', '--abbrev=40', '--full-index', '-M', '--raw', '-z', '--no-color'], cwd=C:\Users\tharu\github prog\End-to-End-Book-Recommender-System, stdin=None, shell=False, universal_newlines=False)
+[2025-06-26 23:14:26,067] git.cmd - DEBUG - Popen(['git', 'rev-list', 'origin/main..main', '--'], cwd=C:\Users\tharu\github prog\End-to-End-Book-Recommender-System, stdin=None, shell=False, universal_newlines=False)
